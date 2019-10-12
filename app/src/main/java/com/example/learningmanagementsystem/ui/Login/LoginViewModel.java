@@ -1,14 +1,14 @@
-package com.example.learningmanagementsystem.ui.share;
+package com.example.learningmanagementsystem.ui.Login;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class LoginViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public LoginViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is share fragment");
     }
