@@ -18,4 +18,5 @@
     <string name="news">News</string>
     <string name="messages">Messages</string>
     <string name="user">User</string>
+    <string name="course_content">Course Content</string>
 </resources>

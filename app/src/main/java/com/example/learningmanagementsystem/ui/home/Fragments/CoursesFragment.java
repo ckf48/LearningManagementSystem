@@ -1,6 +1,7 @@
 package com.example.learningmanagementsystem.ui.home.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.learningmanagementsystem.LearningActivity;
 import com.example.learningmanagementsystem.R;
 import com.example.learningmanagementsystem.n_ui.Course;
 
@@ -30,7 +32,7 @@ public class CoursesFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout_main_coures, container, false);
         listView = view.findViewById(R.id.course_list);
         initCourse();
@@ -39,7 +41,9 @@ public class CoursesFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+                Intent intent = new Intent();
+                intent.setClass(getContext(), LearningActivity.class);
+                startActivity(intent);
             }
         });
 
