@@ -1,22 +1,75 @@
 <resources>
-    <string name="app_name">LearningManagementSystem</string>
+    <string name="app_name">ELearning</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">BJTU MOOC</string>
-    <string name="nav_header_subtitle">SE</string>
+    <string name="nav_header_title">User Name</string>
+    <string name="nav_header_subtitle">User Description</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
-    <string name="home">HOME</string>
-    <string name="courses">Courses</string>
-    <string name="news">News</string>
-    <string name="messages">Messages</string>
-    <string name="user">User</string>
-    <string name="course_content">Course Content</string>
+    <string name="home">Home</string>
+    <string name="my_classes">My Classes</string>
+    <string name="calendar">Calendar</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="category">Category</string>
+    <string name="recommend">Recommend</string>
+    <string name="timeline">Timeline</string>
+    <string name="action_settings">Settings</string>
+    <string name="place_holder">place_holder</string>
+
+    <string-array name="tab">
+        <item>@string/category</item>
+        <item>@string/recommend</item>
+        <item>@string/timeline</item>
+    </string-array>
+
+    <string name="course">course</string>
+    <string name="others">others</string>
+    <string name="profile">profile</string>
+
+    <string name="white_space" translatable="false"> </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_profile_data">Enter Profile Data</string>
+    <string name="next">Next</string>
+    <string name="login">login</string>
+    <string name="account">account</string>
+    <string name="register">register</string>
+    <string name="register_and_login">register and login</string>
+    <string name="please_check_input">Please Check  Input</string>
+    <string name="invalid_format">invalid format</string>
+    <string name="wrong_password_or_account">Wrong Password Or Account</string>
+    <string name="message">message</string>
+    <string name="enter_user_profile">Enter User Profile</string>
+    <string name="choose_user_password">choose user password</string>
+    <string name="description">description</string>
+    <string name="syllabus">syllabus</string>
+    <string name="teacher">teacher</string>
+    <string name="cost">cost</string>
+    <string name="application_information">application information</string>
+    <string name="see_application_information">see application information</string>
+    <string name="log_out">log out</string>
+    <string name="are_you_sure_to_log_out">are you sure to log out?</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="password">password</string>
+    <string name="language">language</string>
+    <string name="default_language">default language</string>
+    <string name="english" translatable="false">English</string>
+    <string name="simplified_chinese" translatable="false">简体中文</string>
+    <string name="title">title</string>
+    <string name="content">content</string>
+    <string name="buy">buy</string>
+    <string name="name">name</string>
+    <string name="remained">remained</string>
+    <string name="money">money</string>
+    <string name="charge">charge</string>
+    <string-array name="languages">
+        <item>@string/default_language</item>
+        <item>@string/simplified_chinese</item>
+        <item>@string/english</item>
+    </string-array>
 </resources>

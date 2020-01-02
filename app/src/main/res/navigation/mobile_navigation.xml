@@ -3,42 +3,85 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.learningmanagementsystem.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.example.learningmanagementsystem.view.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_nav_home_to_categoryDetailFragment"
+            app:destination="@id/categoryDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="id"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_calendar"
+        android:name="com.example.learningmanagementsystem.view.calendar.CalendarFragment"
+        android:label="@string/calendar"
+        tools:layout="@layout/calendar_fragment" />
+    <fragment
+        android:id="@+id/nav_myClasses"
+        android:name="com.example.learningmanagementsystem.view.myCourse.MyCourseFragment"
+        android:label="@string/my_classes"
+        tools:layout="@layout/my_classes_fragment" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.learningmanagementsystem.view.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@xml/app_preference" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.learningmanagementsystem.view.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/profile_fragment" />
+    <fragment
+        android:id="@+id/nav_course"
+        android:name="com.example.learningmanagementsystem.view.course.CourseFragment"
+        android:label="@string/course"
+        tools:layout="@layout/course_fragment">
+        <argument
+            android:name="cid"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.learningmanagementsystem.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_login"
+        android:name="com.example.learningmanagementsystem.view.authentication.LoginFragment"
+        android:label="@string/login"
+        tools:layout="@layout/login_fragment"/>
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.learningmanagementsystem.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
+        android:id="@+id/nav_lesson"
+        android:name="com.example.learningmanagementsystem.view.lesson.LessonFragment"
+        android:label="LessonFragment"
+        tools:layout="@layout/lesson_fragment">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.learningmanagementsystem.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
-
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.learningmanagementsystem.ui.Login.LoginFragment"
-        android:label="@string/user"
-        tools:layout="@layout/fragment_login" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.learningmanagementsystem.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
-
+        android:id="@+id/categoryDetailFragment"
+        android:name="com.example.learningmanagementsystem.view.category.CategoryDetailFragment"
+        android:label="CategoryDetailFragment"
+        tools:layout="@layout/course_recycler">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_nav_course"
+        app:destination="@id/nav_course">
+        <argument
+            android:name="cid"
+            app:argType="integer"/>
+    </action>
+    <action android:id="@+id/action_global_nav_lesson" app:destination="@id/nav_lesson" />
 </navigation>
