@@ -11,7 +11,6 @@ import com.example.learningmanagementsystem.model.User;
 import com.example.learningmanagementsystem.util.App;
 import com.example.learningmanagementsystem.util.base.BaseViewModel;
 
-
 public class LoginViewModel extends BaseViewModel {
     public MutableLiveData<AuthenticationState> authenticationState;
 

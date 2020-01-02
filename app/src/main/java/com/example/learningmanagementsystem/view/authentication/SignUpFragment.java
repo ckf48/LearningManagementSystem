@@ -11,10 +11,10 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.example.learningmanagementsystem.R;
 import com.example.learningmanagementsystem.util.base.ViewModelFragment;
-import com.google.android.material.snackbar.Snackbar;
-
+import com.example.learningmanagementsystem.view.authentication.RegistrationViewModel.RegistrationState;
 
 public class SignUpFragment extends ViewModelFragment<RegistrationViewModel> {
     private Button mRegisterLogin;
@@ -49,7 +49,7 @@ public class SignUpFragment extends ViewModelFragment<RegistrationViewModel> {
 
     private void handleRegistrationStateChanged() {
         mVM.getRegistrationState().observe(getViewLifecycleOwner(), registrationState -> {
-            if (registrationState == RegistrationViewModel.RegistrationState.REGISTRATION_COMPLETED) {
+            if (registrationState == RegistrationState.REGISTRATION_COMPLETED) {
                 mNavController.popBackStack(R.id.nav_profile, false);
             }
         });

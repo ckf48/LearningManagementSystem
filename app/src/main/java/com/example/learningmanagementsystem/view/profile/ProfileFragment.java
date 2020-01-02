@@ -16,7 +16,6 @@ import com.example.learningmanagementsystem.model.User;
 import com.example.learningmanagementsystem.util.base.DataBindingFragment;
 import com.example.learningmanagementsystem.view.authentication.LoginViewModel;
 
-
 public class ProfileFragment extends DataBindingFragment<ProfileFragmentBinding> {
     private NavController mNavController;
     private LoginViewModel mVM;

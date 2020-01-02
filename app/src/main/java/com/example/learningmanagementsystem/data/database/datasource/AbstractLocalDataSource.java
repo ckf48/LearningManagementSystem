@@ -1,6 +1,5 @@
 package com.example.learningmanagementsystem.data.database.datasource;
 
-
 import com.example.learningmanagementsystem.data.database.AppDatabase;
 
 public abstract class AbstractLocalDataSource {

@@ -14,7 +14,6 @@ import com.example.learningmanagementsystem.model.User;
 import com.example.learningmanagementsystem.util.App;
 import com.example.learningmanagementsystem.util.base.BaseViewModel;
 
-
 public class ProfileViewModel extends BaseViewModel {
     private final MutableLiveData<User> mUserMutableLiveData = new MutableLiveData<>();
     public Double money = 0.0;

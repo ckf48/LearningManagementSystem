@@ -5,7 +5,6 @@ import android.view.View;
 import com.example.learningmanagementsystem.R;
 import com.example.learningmanagementsystem.util.base.BaseFragment;
 
-
 public class TimelineFragment extends BaseFragment {
     @Override
     protected int getLayout() {

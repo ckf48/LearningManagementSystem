@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.example.learningmanagementsystem.R;
 import com.example.learningmanagementsystem.databinding.CourseFragmentBinding;
 import com.example.learningmanagementsystem.databinding.LessonMessageItemBinding;
@@ -23,7 +24,6 @@ import com.example.learningmanagementsystem.model.LessonBriefInfo;
 import com.example.learningmanagementsystem.util.base.DataBindingFragment;
 import com.example.learningmanagementsystem.util.recycler.DataBindingRecyclerAdapter;
 import com.example.learningmanagementsystem.util.recycler.DataBindingRecyclerViewHolder;
-import com.google.android.material.appbar.CollapsingToolbarLayout;
 
 import java.util.List;
 import java.util.Objects;

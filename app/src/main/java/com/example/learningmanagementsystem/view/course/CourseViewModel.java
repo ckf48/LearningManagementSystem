@@ -9,6 +9,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.example.learningmanagementsystem.MobileNavigationDirections;
 import com.example.learningmanagementsystem.data.datasource.CourseDataSource;
 import com.example.learningmanagementsystem.data.datasource.PurchaseDataSource;
 import com.example.learningmanagementsystem.data.datasource.UserDataSource;
@@ -17,7 +18,6 @@ import com.example.learningmanagementsystem.model.Course;
 import com.example.learningmanagementsystem.model.CourseDetailInfo;
 import com.example.learningmanagementsystem.util.App;
 import com.example.learningmanagementsystem.util.base.BaseViewModel;
-
 
 public class CourseViewModel extends BaseViewModel {
     private MutableLiveData<CourseDetailInfo> courseDetail = new MutableLiveData<>();

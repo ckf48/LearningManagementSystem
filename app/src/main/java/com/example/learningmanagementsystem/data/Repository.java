@@ -9,7 +9,6 @@ import com.example.learningmanagementsystem.data.repository.LessonRepository;
 import com.example.learningmanagementsystem.data.repository.PurchaseRepository;
 import com.example.learningmanagementsystem.data.repository.UserRepository;
 
-
 public class Repository{
     public final CategoryRepository category;
     public final CourseRepository course;

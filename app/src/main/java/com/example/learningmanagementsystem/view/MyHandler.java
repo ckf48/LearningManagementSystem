@@ -5,8 +5,9 @@ import android.view.View;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.example.learningmanagementsystem.MobileNavigationDirections;
 import com.example.learningmanagementsystem.model.LessonBriefInfo;
-
+import com.example.learningmanagementsystem.view.home.HomeFragmentDirections;
 
 public class MyHandler {
     public static int cid;

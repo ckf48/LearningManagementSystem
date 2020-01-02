@@ -10,12 +10,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
 import com.example.learningmanagementsystem.R;
 import com.example.learningmanagementsystem.util.base.BaseFragment;
 import com.example.learningmanagementsystem.view.home.category.CategoryFragment;
 import com.example.learningmanagementsystem.view.home.recommend.RecommendFragment;
-import com.google.android.material.tabs.TabLayout;
-
 
 public class HomeFragment extends BaseFragment {
     private final int NUM_TAB = 3;

@@ -1,6 +1,5 @@
 package com.example.learningmanagementsystem.data.network;
 
-
 import com.example.learningmanagementsystem.model.Category;
 import com.example.learningmanagementsystem.model.CourseBriefInfo;
 import com.example.learningmanagementsystem.model.CourseDetailInfo;

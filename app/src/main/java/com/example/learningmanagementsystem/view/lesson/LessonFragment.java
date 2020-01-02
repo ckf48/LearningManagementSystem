@@ -9,10 +9,6 @@ import androidx.annotation.Nullable;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.example.learningmanagementsystem.R;
-import com.example.learningmanagementsystem.databinding.LessonFragmentBinding;
-import com.example.learningmanagementsystem.model.Lesson;
-import com.example.learningmanagementsystem.util.base.DataBindingFragment;
 import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.DefaultRenderersFactory;
 import com.google.android.exoplayer2.ExoPlayer;
@@ -23,6 +19,10 @@ import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
+import com.example.learningmanagementsystem.R;
+import com.example.learningmanagementsystem.databinding.LessonFragmentBinding;
+import com.example.learningmanagementsystem.model.Lesson;
+import com.example.learningmanagementsystem.util.base.DataBindingFragment;
 
 import java.util.Objects;
 

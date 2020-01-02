@@ -16,10 +16,9 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.example.learningmanagementsystem.R;
 import com.example.learningmanagementsystem.util.base.ViewModelFragment;
-import com.google.android.material.snackbar.Snackbar;
-
 
 public class LoginFragment extends ViewModelFragment<LoginViewModel> {
     private NavController mNavController;

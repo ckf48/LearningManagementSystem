@@ -25,12 +25,11 @@ import com.example.learningmanagementsystem.model.Purchase;
 import com.example.learningmanagementsystem.model.Type;
 import com.example.learningmanagementsystem.model.User;
 
-
 @Database(entities = {User.class, Course.class, CourseBriefInfo.class, Lesson.class, Category.class, Type.class, Purchase.class}, version = 1)
 @TypeConverters({Converters.class})
 public abstract class AppDatabase extends RoomDatabase {
     private static volatile AppDatabase INSTANCE;
-    private static RoomDatabase.Callback sCallback = new RoomDatabase.Callback() {
+    private static Callback sCallback = new Callback() {
         @Override
         public void onOpen(@NonNull SupportSQLiteDatabase db) {
             super.onOpen(db);

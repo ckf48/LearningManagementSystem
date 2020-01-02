@@ -9,7 +9,6 @@ import com.example.learningmanagementsystem.data.datasource.UserDataSource;
 import com.example.learningmanagementsystem.util.App;
 import com.example.learningmanagementsystem.util.base.BaseViewModel;
 
-
 public class RegistrationViewModel extends BaseViewModel {
     private MutableLiveData<RegistrationState> registrationState =
             new MutableLiveData<>(RegistrationState.COLLECT_USER_PASSWORD);

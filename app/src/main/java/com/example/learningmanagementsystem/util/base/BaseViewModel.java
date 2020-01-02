@@ -8,7 +8,6 @@ import androidx.lifecycle.AndroidViewModel;
 
 import com.example.learningmanagementsystem.data.Repository;
 
-
 public abstract class BaseViewModel extends AndroidViewModel {
     protected final String TAG = getClass().getSimpleName();
     protected Repository mRepository;

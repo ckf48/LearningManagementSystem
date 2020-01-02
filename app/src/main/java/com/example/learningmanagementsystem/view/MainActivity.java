@@ -18,11 +18,10 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.learningmanagementsystem.R;
-import com.example.learningmanagementsystem.util.base.BaseActivity;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
-
+import com.example.learningmanagementsystem.R;
+import com.example.learningmanagementsystem.util.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
     private AppBarConfiguration mAppBarConfiguration;
