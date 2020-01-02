@@ -21,6 +21,7 @@ import com.example.learningmanagementsystem.view.MyHandler;
 import java.util.List;
 import java.util.Objects;
 
+import static com.example.learningmanagementsystem.data.network.NetTool.RESOURCE_URL;
 
 public class MyCourseFragment extends ViewModelFragment<MyCourseViewModel> {
     private CourseAdapter courseAdapter;
@@ -42,7 +43,7 @@ public class MyCourseFragment extends ViewModelFragment<MyCourseViewModel> {
                 Objects.requireNonNull(getActivity()).getLayoutInflater(),
                 null,
                 R.layout.course_recycler_item,
-                com.yuri.elearning.BR.course);
+                com.example.learningmanagementsystem.BR.course);
         recyclerView.setAdapter(courseAdapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
 

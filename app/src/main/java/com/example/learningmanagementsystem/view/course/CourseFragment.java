@@ -28,7 +28,7 @@ import com.google.android.material.appbar.CollapsingToolbarLayout;
 import java.util.List;
 import java.util.Objects;
 
-
+import static com.example.learningmanagementsystem.data.network.NetTool.RESOURCE_URL;
 
 public class CourseFragment extends DataBindingFragment<CourseFragmentBinding> {
     private MutableLiveData<CourseDetailInfo> mCourse;
@@ -72,7 +72,7 @@ public class CourseFragment extends DataBindingFragment<CourseFragmentBinding> {
                 Objects.requireNonNull(getActivity()).getLayoutInflater(),
                 null,
                 R.layout.lesson_message_item,
-                com.yuri.elearning.BR.lesson_brief_info,
+                com.example.learningmanagementsystem.BR.lesson_brief_info,
                 mViewModel
         );
         mCourse = mViewModel.getCourseDetail();

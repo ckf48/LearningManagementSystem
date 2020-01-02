@@ -10,10 +10,10 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.yuri.elearning.util.App;
-import com.yuri.elearning.util.SPUtils;
-import com.yuri.elearning.util.language.LanguageUtil;
-import com.yuri.elearning.view.MainActivity;
+import com.example.learningmanagementsystem.util.App;
+import com.example.learningmanagementsystem.util.SPUtils;
+import com.example.learningmanagementsystem.util.language.LanguageUtil;
+import com.example.learningmanagementsystem.view.MainActivity;
 
 public abstract class BaseActivity extends AppCompatActivity {
     protected static Toast sToast;

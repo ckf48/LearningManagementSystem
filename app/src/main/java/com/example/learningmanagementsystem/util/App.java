@@ -7,8 +7,8 @@ import android.util.Log;
 
 import androidx.room.Room;
 
-import com.yuri.elearning.data.database.AppDatabase;
-import com.yuri.elearning.util.language.LanguageUtil;
+import com.example.learningmanagementsystem.data.database.AppDatabase;
+import com.example.learningmanagementsystem.util.language.LanguageUtil;
 
 public class App extends Application {
     private static Context sContext;

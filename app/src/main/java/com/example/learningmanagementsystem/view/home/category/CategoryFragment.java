@@ -10,7 +10,9 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.learningmanagementsystem.R;
 import com.example.learningmanagementsystem.databinding.CategoryRecyclerItemBinding;
+import com.example.learningmanagementsystem.model.Category;
 import com.example.learningmanagementsystem.util.base.ViewModelFragment;
+import com.example.learningmanagementsystem.util.recycler.DataBindingRecyclerAdapter;
 import com.example.learningmanagementsystem.view.MyHandler;
 
 import java.util.List;
@@ -31,7 +33,7 @@ public class CategoryFragment extends ViewModelFragment<CategoryViewModel> {
                 Objects.requireNonNull(getActivity()).getLayoutInflater(),
                 null,
                 R.layout.category_recycler_item,
-                com.yuri.elearning.BR.category
+                com.example.learningmanagementsystem.BR.category
         );
         mRecyclerView.setAdapter(mCategoryAdaptor);
         mVM.getCategoryLiveData().observe(getViewLifecycleOwner(), list -> {
