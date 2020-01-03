@@ -7,7 +7,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
@@ -16,14 +15,14 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.example.learningmanagementsystem.R;
 import com.example.learningmanagementsystem.util.base.ViewModelFragment;
+import com.google.android.material.snackbar.Snackbar;
 
 public class LoginFragment extends ViewModelFragment<LoginViewModel> {
     private NavController mNavController;
-    private ImageView mLeft;
-    private ImageView mRight;
+//    private ImageView mLeft;
+//    private ImageView mRight;
     private Button mLoginButton;
     private Button mRegisterButton;
     private EditText mAccount;
@@ -67,8 +66,8 @@ public class LoginFragment extends ViewModelFragment<LoginViewModel> {
     @Override
     protected void afterCreateVM(View root) {
         mNavController = Navigation.findNavController(root);
-        mLeft = root.findViewById(R.id.left_image);
-        mRight = root.findViewById(R.id.right_image);
+//        mLeft = root.findViewById(R.id.left_image);
+//        mRight = root.findViewById(R.id.right_image);
         mLoginButton = root.findViewById(R.id.login_button);
         mRegisterButton = root.findViewById(R.id.register_button);
         mAccount = root.findViewById(R.id.et_account);
@@ -77,20 +76,20 @@ public class LoginFragment extends ViewModelFragment<LoginViewModel> {
         handleAuthenticationStateChanged(root);
         handleRegister();
         handleBackPressed();
-        initPasswordEntering();
+        //initPasswordEntering();
     }
 
-    private void initPasswordEntering() {
-        mPassword.setOnFocusChangeListener((v, hasFocus) -> {
-            if (hasFocus) {
-                mLeft.setImageResource(R.drawable.left_password);
-                mRight.setImageResource(R.drawable.right_password);
-            } else {
-                mLeft.setImageResource(R.drawable.left_normal);
-                mRight.setImageResource(R.drawable.right_normal);
-            }
-        });
-    }
+//    private void initPasswordEntering() {
+//        mPassword.setOnFocusChangeListener((v, hasFocus) -> {
+//            if (hasFocus) {
+//                mLeft.setImageResource(R.drawable.left_password);
+//                mRight.setImageResource(R.drawable.right_password);
+//            } else {
+//                mLeft.setImageResource(R.drawable.left_normal);
+//                mRight.setImageResource(R.drawable.right_normal);
+//            }
+//        });
+//    }
 
     private void handleLogin() {
         mLoginButton.setOnClickListener(v -> {
