@@ -1,6 +1,9 @@
 package com.example.learningmanagementsystem.model;
 
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
+import androidx.databinding.BindingAdapter;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -26,5 +29,10 @@ public class LessonBriefInfo {
         this.time = time;
         this.id = id;
         this.cid = cid;
+    }
+
+    @BindingAdapter("android:text")
+    public static void getText(TextView view, Date date) {
+        view.setText(date.toString());
     }
 }

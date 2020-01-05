@@ -10,6 +10,7 @@ import com.example.learningmanagementsystem.databinding.CategoryRecyclerItemBind
 import com.example.learningmanagementsystem.databinding.CourseFragmentBindingImpl;
 import com.example.learningmanagementsystem.databinding.CourseRecyclerItemBindingImpl;
 import com.example.learningmanagementsystem.databinding.LessonFragmentBindingImpl;
+import com.example.learningmanagementsystem.databinding.LessonItemBindingImpl;
 import com.example.learningmanagementsystem.databinding.LessonMessageItemBindingImpl;
 import com.example.learningmanagementsystem.databinding.ProfileFragmentBindingImpl;
 import java.lang.IllegalArgumentException;
@@ -31,17 +32,20 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_LESSONFRAGMENT = 4;
 
-  private static final int LAYOUT_LESSONMESSAGEITEM = 5;
+  private static final int LAYOUT_LESSONITEM = 5;
 
-  private static final int LAYOUT_PROFILEFRAGMENT = 6;
+  private static final int LAYOUT_LESSONMESSAGEITEM = 6;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(6);
+  private static final int LAYOUT_PROFILEFRAGMENT = 7;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(7);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.learningmanagementsystem.R.layout.category_recycler_item, LAYOUT_CATEGORYRECYCLERITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.learningmanagementsystem.R.layout.course_fragment, LAYOUT_COURSEFRAGMENT);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.learningmanagementsystem.R.layout.course_recycler_item, LAYOUT_COURSERECYCLERITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.learningmanagementsystem.R.layout.lesson_fragment, LAYOUT_LESSONFRAGMENT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.learningmanagementsystem.R.layout.lesson_item, LAYOUT_LESSONITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.learningmanagementsystem.R.layout.lesson_message_item, LAYOUT_LESSONMESSAGEITEM);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.example.learningmanagementsystem.R.layout.profile_fragment, LAYOUT_PROFILEFRAGMENT);
   }
@@ -78,6 +82,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new LessonFragmentBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for lesson_fragment is invalid. Received: " + tag);
+        }
+        case  LAYOUT_LESSONITEM: {
+          if ("layout/lesson_item_0".equals(tag)) {
+            return new LessonItemBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for lesson_item is invalid. Received: " + tag);
         }
         case  LAYOUT_LESSONMESSAGEITEM: {
           if ("layout/lesson_message_item_0".equals(tag)) {
@@ -150,13 +160,14 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(6);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(7);
 
     static {
       sKeys.put("layout/category_recycler_item_0", com.example.learningmanagementsystem.R.layout.category_recycler_item);
       sKeys.put("layout/course_fragment_0", com.example.learningmanagementsystem.R.layout.course_fragment);
       sKeys.put("layout/course_recycler_item_0", com.example.learningmanagementsystem.R.layout.course_recycler_item);
       sKeys.put("layout/lesson_fragment_0", com.example.learningmanagementsystem.R.layout.lesson_fragment);
+      sKeys.put("layout/lesson_item_0", com.example.learningmanagementsystem.R.layout.lesson_item);
       sKeys.put("layout/lesson_message_item_0", com.example.learningmanagementsystem.R.layout.lesson_message_item);
       sKeys.put("layout/profile_fragment_0", com.example.learningmanagementsystem.R.layout.profile_fragment);
     }
